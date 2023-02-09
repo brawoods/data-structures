@@ -27,7 +27,6 @@ var Queue = function() {
       storage[key - 1] = storage[key];
       delete storage[key];
     }
-    console.log('new length: ', Object.keys(storage).length);
     return firstElement;
   };
 
