@@ -35,7 +35,6 @@ stackMethods.pop = function () {
 // size
 stackMethods.size = function () {
   // get length of object via Object.keys on storage and return
-  console.log(Object.keys(this.storage).length);
   return Object.keys(this.storage).length;
 };
 
