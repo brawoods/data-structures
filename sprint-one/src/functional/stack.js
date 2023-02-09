@@ -7,10 +7,8 @@ var Stack = function() {
   // Implement the methods below
   someInstance.push = function(value) {
     // identify lastKey in storage
-    let lastKey = Object.keys(storage).length - 1;
-    // set new value at index of lastKey + 1
-    storage[lastKey + 1] = value;
-    return storage.length;
+    storage[Object.keys(storage).length] = value;
+    return Object.keys(storage).length;
   };
 
   someInstance.pop = function() {
